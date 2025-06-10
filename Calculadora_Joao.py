@@ -107,26 +107,26 @@ while True:
 [3] Reajuste Salarial''')
             print('-=-' * 16)
 
-            opc = int(input(f'Escolha uma Opção:'))
+            sub_opc = int(input(f'Escolha uma Opção:'))
 
-            if opc not in [1, 2, 3]:
+            if sub_opc not in [1, 2, 3]:
                 print('-=-' * 16)
                 print("Opção inválida. Tente novamente!")
                 continue
 
-            if opc == 1:
+            if sub_opc == 1:
                 valor = float(input(f'Digite um número: '))
                 percentual = float(input(f'Qual o percentual desse número? '))
                 print(f'{percentual}% de {valor} é = {porcentagem(valor, percentual):.2f}')
 
-            if opc == 2:
+            if sub_opc == 2:
                 p = float(input(f'Qual o preço do produto: R$'))
                 percentual = int(input(f'Quantos %: '))
                 desconto = (p * percentual / 100)
                 preço = p - desconto
                 print(f'O produto que custava R${p}, com desconto de {percentual}% fica por R${preço:.2f}')
 
-            if opc == 3:
+            if sub_opc == 3:
                 sal = float(input(f'Qual é o seu salário ? R$'))
                 percentual = int(input(f'Quantos % vai subir? '))
                 aumento = (sal * percentual / 100)
